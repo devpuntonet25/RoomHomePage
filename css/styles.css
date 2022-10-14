@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+:root{
+    --dark-gray: hsl(0, 0%, 63%);
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    -very-dark-gray: hsl(0, 0%, 27%);
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+
+.main{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "hero"
+    "shopNow"
+    "image2"
+    "aboutOurFurniture"
+    "lastImage";
+}
+
+.main-hero{
+    grid-area: hero;
+    min-height: 400px;
+    background-image: url("../images/mobile-image-hero-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+
+.hero-nav{
+    display: flex;
+}
+
+.hero-lista{
+    display: none;
+}
+
+.hero-logo{
+    margin: 0 auto;
+}
+
+.main-controles{
+    grid-area: hero;
+    align-self: end;
+    justify-self: end;
+    background-color: var(--black);
+    width: 90px;
+    height: 42px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.controles-flecha{
+    height: 40%;
+}
+
+.main-shopNow{
+    grid-area: shopNow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopNow-title{
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.shopNow-paragraph{
+    margin: 30px 0 50px 0;
+    color: var(--dark-gray);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+
+
+.shopNow-enlace{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+    letter-spacing: 0.7rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin: 0 auto 0 0;
+}
+
+.enlace-arrow{
+    margin-left: 25px;
+}
+
+.main__imagen2{
+    grid-area: image2;
+    min-height: 250px;
+    height: 100%;
+    background-image: url("../images/image-about-dark.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main__about{
+    grid-area: aboutOurFurniture;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.about__title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.shopNow__paragrap-about{
+    margin: 25px 0 0;
+}
+
+.main__lastImage{
+    grid-area: lastImage;
+    min-height: 250px;
+    height: 100%;
+    background-image: url("../images/image-about-light.jpg");
+    background-size: cover;
+    background-position: center;
+}
