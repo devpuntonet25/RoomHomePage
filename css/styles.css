@@ -145,3 +145,160 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+@media (min-width: 768px) {
+    .container{
+        width: 85%;
+        padding: 70px 0;
+    }
+    .main{
+        height: 100vh;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: 
+        "hero hero hero hero shopNow shopNow shopNow"
+        "hero hero hero hero shopNow shopNow shopNow"
+        "hero hero hero hero shopNow shopNow shopNow"
+        "hero hero hero hero shopNow shopNow shopNow"
+        "hero hero hero hero shopNow shopNow shopNow"
+        "image2 image2 aboutOurFurniture aboutOurFurniture aboutOurFurniture lastImage lastImage"
+        "image2 image2 aboutOurFurniture aboutOurFurniture aboutOurFurniture lastImage lastImage"
+        "image2 image2 aboutOurFurniture aboutOurFurniture aboutOurFurniture lastImage lastImage";
+    }
+    .main-controles{
+        grid-area: shopNow;
+        align-self: end;
+        justify-self: start;
+    }
+
+    .main-shopNow{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .shopNow-container{
+        width: 80%;
+        height: 80%;
+        overflow: hidden;
+    }
+
+    .shopNow-title{
+        font-size: 1.4rem;
+    }
+
+    .shopNow-paragraph{
+        font-size: 0.7rem;
+        margin: 20px 0;
+    }
+
+    .shopNow-enlace{
+        font-size: 0.7rem;
+    }
+
+    .enlace-arrow{
+        width: 35px;
+    }
+
+
+    .main-hero{
+        min-height: 400px;
+        height: 100%;
+        min-width: 375px;
+        width: 100%;
+        background-image: url("../images/desktop-image-hero-1.jpg");
+    }
+
+    .hero-icon{
+        display: none;
+    }
+
+    .hero-logo{
+        margin: 0 50px 0 0;
+    }
+
+    .hero-lista{
+        display: flex;
+        flex-basis: 60%;
+        gap: 10%;
+    }
+
+    .hero-listItem{
+        list-style-type: none;
+    }
+
+    .lista-link{
+        text-decoration: none;
+        color: var(--white);
+    }
+
+    .main__about--container{
+        padding: 40px 0;
+    }
+
+    .about__texts{
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    .shopNow__paragrap-about{
+        margin: 10px 0 0;
+        font-size: 0.8rem;
+    }
+
+    .about__title{
+        font-size: 1rem;
+    }
+
+    @media (min-width: 1024px) {
+        .shopNow-title{
+            font-size: 1.4rem;
+        }
+    
+        .shopNow-paragraph{
+            margin: 30px 0;
+            font-size: 1rem;
+        }
+        .shopNow__paragrap-about{
+            margin: 10px 0 0;
+            font-size: 1rem;
+        }
+        .shopNow-enlace{
+            font-size: 1rem;
+        }
+    
+        .enlace-arrow{
+            width: 50px;
+        }
+        .about__title{
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .shopNow-title{
+            font-size: 2rem;
+        }
+    
+        .shopNow-paragraph{
+            margin: 30px 0;
+            font-size: 1.2rem;
+        }
+        .shopNow__paragrap-about{
+            margin: 10px 0 0;
+        }
+        .shopNow-enlace{
+            font-size: 1.2rem;
+        }
+    
+        .enlace-arrow{
+            width: 70px;
+        }
+        .about__title{
+            font-size: 1.7rem;
+        }
+    }
+    
+}
